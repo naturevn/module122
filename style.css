@@ -1,0 +1,64 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: #8396a5;
+}
+
+#score {
+    height: 60px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 40px sans-serif;
+}
+
+#field {
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template: repeat(3, 80px) / repeat(3, 80px);
+    grid-gap: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background: #8396a5;
+}
+
+#field div {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #e2e2e2;
+    font: 40px sans-serif;
+    transition: background 1s;
+}
+
+#restart {
+    height: 80px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #e2e2e2;
+    outline: 5px solid #8396a5;
+    font: 40px sans-serif;
+    transition: background 1s;
+    visibility: hidden;
+}
+
+#field div:hover,
+#restart:hover {
+    background: #c5dde5;
+}
